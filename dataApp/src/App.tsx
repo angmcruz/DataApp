@@ -20,7 +20,6 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
-import '@ionic/react/css/palettes/dark.system.css';
 import './theme/variables.css';
 
 setupIonicReact();
@@ -31,9 +30,9 @@ const App: React.FC = () => {
     const iniciarBD = async () => {
       try {
         await initDB();
-        console.log('✅ Base de datos inicializada');
+        console.log('Base de datos inicializada');
       } catch (error) {
-        console.error('❌ Error al inicializar la base de datos:', error);
+        console.error('Error al inicializar la base de datos:', error);
       }
     };
 
